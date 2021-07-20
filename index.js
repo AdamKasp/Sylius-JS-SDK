@@ -1,7 +1,7 @@
-const cart = require("./src/Cart");
-const shopProduct = require("./src/ShopProduct");
-const shopLogin = require("./src/ShopLogin");
+const product = require("./src/shop/Product");
+const login = require("./src/shop/Login");
+const shopClient = require("./src/ShopClient");
 
-module.exports.cart = cart;
-module.exports.shopProduct = shopProduct;
-module.exports.shopLogin = shopLogin;
+module.exports.product = product;
+module.exports.login = login;
+module.exports.shopClient = shopClient;

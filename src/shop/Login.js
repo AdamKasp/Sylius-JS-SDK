@@ -2,7 +2,7 @@
 
 const axios = require("axios");
 
-class ShopLogin {
+class Login {
     constructor() {}
 
     login(email, password) {
@@ -21,4 +21,4 @@ class ShopLogin {
     }
 }
 
-module.exports = ShopLogin;
+module.exports = Login;
