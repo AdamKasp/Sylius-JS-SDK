@@ -1,7 +1,5 @@
-const product = require("./src/shop/Product");
-const login = require("./src/shop/Login");
-const shopClient = require("./src/ShopClient");
+const index = require("./src/Sylius");
 
-module.exports.product = product;
-module.exports.login = login;
-module.exports.shopClient = shopClient;
+module.exports.product = index.product;
+module.exports.login = index.login;
+module.exports.shopClient = index.shopClient;

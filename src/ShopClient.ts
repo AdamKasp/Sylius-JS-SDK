@@ -3,7 +3,7 @@ const axios = require("axios");
 const product = require("./shop/Product");
 const cart = require("./shop/Cart");
 
-class ShopClient {
+export class ShopClient {
     constructor() {}
 
     axiosClient = axios.create({
@@ -13,6 +13,4 @@ class ShopClient {
     product = new product(this.axiosClient);
     cart = new cart(this.axiosClient);
 }
-
-module.exports = ShopClient;
 

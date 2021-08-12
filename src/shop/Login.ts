@@ -1,12 +1,10 @@
-"use strict";
+import axios from 'axios';
 
-const axios = require("axios");
-
-class Login {
+export class Login {
     constructor() {}
 
-    login(email, password) {
-        let axiosConfig = {
+    login(email: string, password: string): any {
+        const axiosConfig = {
             headers: {
                 'Content-Type': 'application/json'
             }
@@ -20,5 +18,3 @@ class Login {
         return axios.post(`/syliusapi/api/v2/shop/authentication-token`, data, axiosConfig)
     }
 }
-
-module.exports = Login;

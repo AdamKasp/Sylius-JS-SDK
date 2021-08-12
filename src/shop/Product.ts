@@ -1,11 +1,9 @@
-"use strict";
-
-class Product {
-    constructor(axiosClient) {
+export class Product {
+    constructor(private axiosClient: any) {
         this.axiosClient = axiosClient;
     }
 
-    getProducts() {
+    getProducts(): any {
         let axiosConfig = {
             headers: {
                 'Content-Type': 'application/ld+json'
@@ -15,4 +13,3 @@ class Product {
     }
 }
 
-module.exports = Product;
