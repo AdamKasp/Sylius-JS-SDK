@@ -1,4 +1,4 @@
-import { Product } from "./shop/Product";
+// import { Product } from "./shop/Product";
 import axios from "axios";
 
 
@@ -11,6 +11,6 @@ export class Sylius {
         baseURL: this.baseURL
     });
 
-    product = new Product(this.axiosClient);
+    // product = new Product(this.axiosClient);
 }
 
